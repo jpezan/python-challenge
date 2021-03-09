@@ -41,8 +41,8 @@ vote_percent = {}
    
    #Print Results
     print(election_results)
-    for item, val in vote_percent.items():
-        print(item, ": ", val)
+    for item, value in vote_percent.items():
+        print(item, ": ", value)
     print(winner)
     
     #Results text file
@@ -50,7 +50,7 @@ election_file = os.path.join("Analysis", "output.txt")
 with open(election_file, "w") as file:
 
     file.write(election_results)
-    for item, val in vote_percent.items():
-         f.write((item + ": " + val)+ '\n')
+    for item, value in vote_percent.items():
+         f.write((item + ": " + value)+ '\n')
     file.write(winner)
     file.close()
