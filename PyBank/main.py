@@ -49,7 +49,7 @@ print("Greatest Decrease in Profits: " + str(months[profit_change.index(min(chan
 
 
 #Text file results
-budget_file = os.path.join("Analysis", "election_data.txt")
+budget_file = os.path.join("Analysis", "output.txt")
 with open(budget_file, "w") as text:
     
     text.write("Financial Analysis")
